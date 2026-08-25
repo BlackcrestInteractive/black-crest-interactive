@@ -41,7 +41,7 @@ export default function BlackcrestGamePage({
       <section className="relative overflow-hidden border-b border-zinc-800 bg-black">
         {/* Soft background fill */}
         <img
-          src={`${base}/${slug === "velocity-unlimited" ? "velocity-unlimited-hero.jpg" : slug === "shadow-dynasty" ? "hero.png" : slug === "world-empire" ? "hero.jpg?v=999" : slug === "life-legacy" ? "life-legacy-hero.jpg" : "hero.jpg"}?v=104`}
+          src={`${base}/${slug === "velocity-unlimited" ? "hero.jpg" : slug === "shadow-dynasty" ? "hero.png" : slug === "world-empire" ? "hero.jpg?v=999" : slug === "life-legacy" ? "life-legacy-hero.jpg" : "hero.jpg"}?v=104`}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full scale-110 object-contain opacity-25 blur-2xl"
@@ -110,9 +110,9 @@ export default function BlackcrestGamePage({
             <div className="overflow-hidden rounded-2xl border border-yellow-500/30 bg-black shadow-2xl">
               <div className="aspect-video w-full">
                 <img
-                  src={`${base}/${slug === "velocity-unlimited" ? "velocity-unlimited-hero.jpg" : slug === "shadow-dynasty" ? "hero.png" : slug === "world-empire" ? "hero.jpg?v=999" : slug === "life-legacy" ? "life-legacy-hero.jpg" : "hero.jpg"}?v=104`}
+                  src={`${base}/${slug === "velocity-unlimited" ? "hero.jpg" : slug === "shadow-dynasty" ? "hero.png" : slug === "world-empire" ? "hero.jpg?v=999" : slug === "life-legacy" ? "life-legacy-hero.jpg" : "hero.jpg"}?v=104`}
                   alt={`${title} official Blackcrest Interactive artwork`}
-                  className={`h-full w-full ${slug === "card-empire-tycoon" ? "object-cover object-[center_30%]" : slug === "airline-simulator" ? "object-cover object-[center_35%]" : slug === "mafia-tycoon" ? "object-cover object-center" : slug === "shadow-dynasty" ? "object-contain" : "object-contain"}`}
+                  className={`h-full w-full ${slug === "velocity-unlimited" ? "object-cover object-[center_30%]" : slug === "airline-simulator" ? "object-cover object-[center_35%]" : slug === "mafia-tycoon" ? "object-cover object-center" : slug === "shadow-dynasty" ? "object-contain" : "object-contain"}`}
                 />
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function BlackcrestGamePage({
               <video
                 controls
                 preload="metadata"
-                poster={slug === "life-legacy" ? `${base}/life-legacy-hero.jpg` : slug === "car-tycoon-legacy" ? `${base}/trailer-poster-v2.jpg` : slug === "airline-simulator" ? `${base}/trailer-poster-v2.jpg` : slug === "card-empire-tycoon" ? `${base}/trailer-poster-v2.jpg` : slug === "life-legacy" || slug === "shadow-dynasty" ? `${base}/trailer-poster-v6.jpg` : slug === "velocity-unlimited" ? `${base}/trailer-poster-v2.jpg` : slug === "empire-chronicles" ? `${base}/hero.jpg` : slug === "world-empire" ? `${base}/hero.jpg` : `${base}/trailer-poster.jpg`}
+                poster={slug === "velocity-unlimited" ? `${base}/hero.jpg` : slug === "car-tycoon-legacy" ? `${base}/trailer-poster-v2.jpg` : slug === "airline-simulator" ? `${base}/trailer-poster-v2.jpg` : slug === "card-empire-tycoon" ? `${base}/trailer-poster-v2.jpg` : slug === "life-legacy" || slug === "shadow-dynasty" ? `${base}/trailer-poster-v6.jpg` : slug === "velocity-unlimited" ? `${base}/trailer-poster-v2.jpg` : slug === "empire-chronicles" ? `${base}/hero.jpg` : slug === "world-empire" ? `${base}/hero.jpg` : `${base}/trailer-poster.jpg`}
                 className={`h-full w-full ${
   slug === "card-empire-tycoon"
     ? "object-cover"
