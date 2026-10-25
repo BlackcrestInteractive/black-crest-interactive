@@ -45,3 +45,6 @@ app/page.tsx.before-*
 app/page.tsx.backup
 
 app/page.tsx.after-*
+
+# Private Blackcrest Owner Dashboard — never deploy
+/app/owner/
