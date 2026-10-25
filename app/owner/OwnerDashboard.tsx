@@ -62,6 +62,12 @@ const sections = [
     href: "/owner/bank",
   },
   {
+    title: "Blackcrest Private AI",
+    icon: "🤖",
+    description: "Access your private Blackcrest AI platform.",
+    href: "/owner/ai",
+  },
+  {
     title: "Owner Administration",
     icon: "⚙️",
     description: "Manage your private Blackcrest workspace.",
